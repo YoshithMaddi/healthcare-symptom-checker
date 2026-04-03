@@ -60,7 +60,6 @@ function renderResult(payload) {
         <p class="severity-note">${escapeHtml(payload.severityDescription || "")}</p>
       </div>
     </div>
-    <p>${escapeHtml(payload.summary)}</p>
     <h3>Probable conditions</h3>
     <div class="conditions">${renderConditions(payload.probableConditions)}</div>
     <h3>Recommended next steps</h3>

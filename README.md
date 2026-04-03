@@ -124,19 +124,11 @@ Content-Type: application/json
 |   |-- analysis-service.js
 |   |-- history-store.js
 |   `-- symptom-utils.js
-|-- test/
-|   `-- run-tests.js
 |-- .env.example
 |-- .gitignore
 |-- package.json
 |-- README.md
 `-- server.js
-```
-
-## Testing
-
-```bash
-npm test
 ```
 
 ## Demo Video Checklist
