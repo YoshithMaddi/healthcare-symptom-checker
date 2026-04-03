@@ -1,0 +1,14 @@
+{
+  "name": "health-codex",
+  "version": "1.0.0",
+  "description": "Healthcare symptom checker with a safety-first LLM backend and optional frontend.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node test/run-tests.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

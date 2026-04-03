@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health Codex Symptom Checker</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Healthcare Symptom Checker</p>
+          <h1>Check your symptoms</h1>
+          <p class="lede">
+            Enter symptoms in plain language to get possible conditions, severity guidance, and
+            recommended next steps.
+          </p>
+        </div>
+      </section>
+
+      <section class="card form-card">
+        <form id="symptom-form">
+          <label for="symptoms">Symptoms</label>
+          <textarea
+            id="symptoms"
+            name="symptoms"
+            rows="8"
+            placeholder="Example: I've had a sore throat, cough"
+            required
+          ></textarea>
+          <button id="submit-button" type="submit">Analyze symptoms</button>
+        </form>
+        <div id="request-status" class="request-status hidden" aria-live="polite"></div>
+        <div class="prompt-row">
+          <button class="ghost chip" type="button" data-prompt="I have had a cough, sore throat, and low fever for two days.">
+            Cold and fever
+          </button>
+          <button class="ghost chip" type="button" data-prompt="I have burning when I urinate and need to go to the bathroom very often.">
+            Possible UTI
+          </button>
+          <button class="ghost chip" type="button" data-prompt="I have chest pain and shortness of breath that started suddenly.">
+            Emergency example
+          </button>
+        </div>
+      </section>
+
+      <section id="results" class="card hidden" aria-live="polite"></section>
+
+      <section class="card">
+        <div class="history-header">
+          <h2>Recent checks</h2>
+          <button id="refresh-history" type="button" class="ghost">Refresh</button>
+        </div>
+        <div id="history" class="history-list"></div>
+      </section>
+    </main>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+  </html>
