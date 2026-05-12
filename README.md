@@ -1,4 +1,4 @@
-# Health Codex
+# Health 
 
 Health Codex is a frontend healthcare symptom checker powered by an LLM-backed analysis flow. Users interact with a browser interface, enter free-text symptoms, and receive:
 
